@@ -1,6 +1,7 @@
 import "./App.css"
 import Button from "./components/Button"
 import Grid from "./components/Grid"
+import Card from "./components/Card"
 
 const App = () => {
     return (
@@ -12,9 +13,9 @@ const App = () => {
             </section>
 
             <section className="column2">
-                <Button text="Generate Images"/>
-
-                <Grid />
+                <Card header="Before Sprint"/>
+                <Card header="During Sprint"/>
+                <Card header="Future Sprints"/>
             </section>
         </div>
     )
