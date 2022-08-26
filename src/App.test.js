@@ -1,8 +1,10 @@
 import { render, screen } from "@testing-library/react"
 import App from "./App"
 
-test("renders learn react link", () => {
+test("renders generate images button", () => {
     render(<App />)
-    const linkElement = screen.getByText(/yo/i)
-    expect(linkElement).toBeInTheDocument()
+
+    const buttonElement = screen.getByText(/generate images/i)
+    
+    expect(buttonElement).toBeInTheDocument()
 })

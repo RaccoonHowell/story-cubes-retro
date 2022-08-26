@@ -1,8 +1,9 @@
 import "./App.css"
+import Button from "./components/Button"
 
 const App = () => {
     return (
-        <h1>yo</h1>
+        <Button text="Generate Images"/>
     )
 }
 
