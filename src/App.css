@@ -1,10 +1,35 @@
+body {
+    margin: 0, auto;
+}
+
+button {
+    color: #fff;
+    background-color: #ff8b94;
+    padding: 20px 30px;
+    font-size: 20px;
+    margin: 40px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.page {
+    display: flex;
+    justify-content: space-around;
+}
+
 .imgHolder {
-    width: 5rem;
-    height: 5rem;
-    border: 2px red solid;
-    margin: 10px;
+    width: 8rem;
+    height: 8rem;
+    background-color: antiquewhite;
+    border: 2px white solid;
 }
 
 .row {
-  display: flex;
+    display: flex;
+}
+
+.column1, .column2 {
+  text-align: center;
+
 }

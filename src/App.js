@@ -4,11 +4,19 @@ import Grid from "./components/Grid"
 
 const App = () => {
     return (
-        <>
-          <Button text="Generate Images"/>
+        <div className="page">
+            <section className="column1">
+                <Button text="Generate Images"/>
 
-          <Grid />
-        </>
+                <Grid />
+            </section>
+
+            <section className="column2">
+                <Button text="Generate Images"/>
+
+                <Grid />
+            </section>
+        </div>
     )
 }
 
