@@ -1,17 +1,11 @@
 import React from "react"
 import { useState } from "react"
 import Grid from "./Grid"
+import emojis from "../emojis"
 
 const Button = ({text}) => {
     const [clicked, setClicked] = useState(false)
     const [emojiSelection, setEmojiSelection] = useState([])
-
-    const emojis = ["🏠", "💡", "🔒", "🦶", "📖", "🌏", "💤", "🎭", "🐞", 
-                    "🔦", "❄️", "♨️", "➶", "☹️", "🌳", "🐝", "🍏", "👁️", 
-                    "💀", "🔑", "💌", "⚡", "🍾", "🐠", "🎲", "🌟", "🦝",
-                    "🧮", "⚖️", "🔎", "✈️", "🐫", "🙋", "🔥", "🏰", "🪂",
-                    "🌝", "💬", "🌈", "🐑", "❓", "🧸", "💪", "😊", "🥳",
-                    "🪦", "🐕", "🕰️", "🌻", "🪄", "🧲", "🧑🏽‍🎓", "🏕", "🐢"]
 
     const shuffle = (array) => {
         return array.sort(() => Math.random() - 0.5)
