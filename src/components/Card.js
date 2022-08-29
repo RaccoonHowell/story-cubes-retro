@@ -1,5 +1,6 @@
 import React from "react"
 import ImageRow from "./ImageRow"
+import Textarea from "react-expanding-textarea"
 
 const Card = ({header}) => {
     return (
@@ -8,7 +9,7 @@ const Card = ({header}) => {
 
             <ImageRow />
 
-            <textarea/>
+            <Textarea className="textarea" />
         </>
     )
 }

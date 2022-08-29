@@ -41,13 +41,11 @@ button {
 .column2 h1, .column2 textarea {
     margin-left: 10px;
 }
-
+/* 
 .column2 textarea {
-    /* width: 100%; */
     height: 2rem;
-    /* margin-right: 50px; */
     border: red 1px solid;
-}
+} */
 
 .gridImage {
     font-size: 70px;
@@ -61,4 +59,15 @@ button {
 .fullGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+input {
+    width: 100%;
+    height: 1rem;
+}
+
+.textarea {
+    resize: none;
+    width: 95%;
+    padding: 3px;
 }
