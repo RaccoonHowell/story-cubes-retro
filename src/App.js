@@ -6,6 +6,9 @@ import EmptyGrid from "./components/EmptyGrid"
 // import Grid from "./components/Grid"
 import Card from "./components/Card"
 import emojis from "./emojis"
+import mable1 from "/Users/rachel.howell/Desktop/story-cubes-retro/src/images/mable1.jpg"
+import mable2 from "/Users/rachel.howell/Desktop/story-cubes-retro/src/images/mable2.jpg"
+import mable3 from "/Users/rachel.howell/Desktop/story-cubes-retro/src/images/mable3.jpg"
 
 const App = () => {
     const [clicked, setClicked] = useState(false)
@@ -43,9 +46,9 @@ const App = () => {
             </section>
 
             <section className="column2">
-                <Card header="Before Sprint"/>
-                <Card header="During Sprint"/>
-                <Card header="Future Sprints"/>
+                <Card header="Before Sprint" imageSource={mable1}/>
+                <Card header="During Sprint" imageSource={mable2}/>
+                <Card header="Future Sprints" imageSource={mable3}/>
             </section>
         </div>
     )

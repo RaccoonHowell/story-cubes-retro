@@ -1,12 +1,12 @@
 import React from "react"
 import Image from "./Image"
 
-const ImageRow = () => {
+const ImageRow = ({imageSource}) => {
     return (
         <div className="row">
-            <Image />
-            <Image />
-            <Image />
+            <Image imageSource={imageSource}/>
+            <Image imageSource={imageSource}/>
+            <Image imageSource={imageSource}/>
         </div>
     )
 }
