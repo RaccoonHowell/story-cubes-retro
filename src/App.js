@@ -9,6 +9,7 @@ import emojis from "./emojis"
 import mable1 from "/Users/rachel.howell/Desktop/story-cubes-retro/src/images/mable1.jpg"
 import mable2 from "/Users/rachel.howell/Desktop/story-cubes-retro/src/images/mable2.jpg"
 import mable3 from "/Users/rachel.howell/Desktop/story-cubes-retro/src/images/mable3.jpg"
+import Draggable from "react-draggable"
 
 const App = () => {
     const [clicked, setClicked] = useState(false)
@@ -26,7 +27,9 @@ const App = () => {
     
     const gridImages = emojiSelection.map((emoji, index) => {
         return (
-            <div className="gridSquare" key={index}>{emoji}</div>
+            <Draggable>
+                <div className="gridSquare" key={index}>{emoji}</div>
+            </Draggable>
         )
     })
 
