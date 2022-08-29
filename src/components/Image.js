@@ -1,10 +1,14 @@
 import React from "react"
-import Draggable from "react-draggable"
+// import Draggable from "react-draggable"
+import me from "/Users/rachel.howell/Desktop/story-cubes-retro/src/images/mable1.jpg"
 
-const Image = ({squareType}) => {
+const Image = () => {
     return (
         // <Draggable>
-            <div className={`imgHolder ${squareType}`}></div>
+            <div >
+                <img className="imgHolder" alt="chow chow" width="130px" height="130px" src={me} />
+            </div>
+
         // </Draggable>
     )
 }
