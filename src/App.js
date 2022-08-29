@@ -9,7 +9,7 @@ const App = () => {
             <section className="column1">
                 <Button text="Generate Images"/>
 
-                <Grid />
+                {/* <Grid /> */}
             </section>
 
             <section className="column2">

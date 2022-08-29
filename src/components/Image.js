@@ -1,8 +1,11 @@
 import React from "react"
+import Draggable from "react-draggable"
 
-const Image = () => {
+const Image = ({squareType}) => {
     return (
-        <div className="imgHolder"></div>
+        // <Draggable>
+            <div className={`imgHolder ${squareType}`}></div>
+        // </Draggable>
     )
 }
 
