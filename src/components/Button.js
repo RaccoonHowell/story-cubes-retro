@@ -32,7 +32,7 @@ const Button = ({text}) => {
         <>
             <button onClick={handleClick}>{text}</button>
           
-            {clicked ? <div>{gridImages}</div> : <h1>nope</h1>}
+            {clicked ? <div className="fullGrid">{gridImages}</div> : <h1>nope</h1>}
         </>
     )
 }
