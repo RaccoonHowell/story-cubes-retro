@@ -1,10 +1,8 @@
 import React from "react"
-// import Draggable from "react-draggable"
 
 const Image = ({imageSource, imageAlt}) => {
     return (
-        // <Draggable>
-            <div >
+            <div>
                 <img 
                     src={imageSource}
                     alt={imageAlt} 
@@ -13,8 +11,6 @@ const Image = ({imageSource, imageAlt}) => {
                     height="130px" 
                 />
             </div>
-
-        // </Draggable>
     )
 }
 
