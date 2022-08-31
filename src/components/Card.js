@@ -6,7 +6,7 @@ const Card = ({header, imageSource}) => {
     return (
         <>
             <h1>{header}</h1>
-
+            
             <ImageRow imageSource={imageSource} />
 
             <Textarea className="textarea" />
