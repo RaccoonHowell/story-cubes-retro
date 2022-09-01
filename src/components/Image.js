@@ -1,15 +1,11 @@
 import React from "react"
 
-const Image = ({imageSource, imageAlt}) => {
+const Image = ({row}) => {
+    const [imageContent, setImageContent] = [""]
+    
     return (
-            <div>
-                <img 
-                    src={imageSource}
-                    alt={imageAlt} 
-                    className="imgHolder" 
-                    width="130px" 
-                    height="130px" 
-                />
+            <div className={`imgHolder gridSquare ${row}`}>
+                
             </div>
     )
 }

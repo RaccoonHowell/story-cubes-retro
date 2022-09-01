@@ -2,12 +2,12 @@ import React from "react"
 import ImageRow from "./ImageRow"
 import Textarea from "react-expanding-textarea"
 
-const Card = ({header, imageSource}) => {
+const Card = ({header, row}) => {
     return (
         <>
             <h1>{header}</h1>
             
-            <ImageRow imageSource={imageSource} />
+            <ImageRow row={row} />
 
             <Textarea className="textarea" />
         </>
