@@ -6,7 +6,6 @@ const Image = ({row}) => {
  
     const [{isOver}, drop] = useDrop(() => ({
         accept: "div",
-        drop: (item) => console.log(item.emoji),
         drop: (item) => setImageContent(item.emoji),
         collect: (monitor) => ({
             isOver: !!monitor.isOver(),
