@@ -6,18 +6,20 @@ const Image = ({row}) => {
  
     const [{isOver}, drop] = useDrop(() => ({
         accept: "div",
-        drop: (item) => console.log(item),
-        // drop: (item) => setImageContent(item.emoji),
+        drop: (item) => console.log(item.emoji),
+        drop: (item) => setImageContent(item.emoji),
         collect: (monitor) => ({
             isOver: !!monitor.isOver(),
         })
     }))
 
+    const className = imageContent ? "gridSquare" : row
+
     return (
             <div 
                 ref={drop} 
-                className={`imgHolder gridSquare ${row}`}
-                style={{border: isOver ? "green solid 5px" : "black solid 1px"}} 
+                className={`imgHolder ${className}`}
+                style={{boxShadow: isOver ? "0 0 20px #00AC32" : "none"}} 
             >
                 {imageContent}    
             </div>

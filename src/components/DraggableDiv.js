@@ -4,6 +4,7 @@ import { useDrag } from "react-dnd"
 const DraggableDiv = ({emoji}) => {
     const [{isDragging}, drag] = useDrag(() => ({
         type: "div",
+        // drag: () => console.log(emoji),
         item: {emoji: emoji},
         collect: (monitor) => ({
             isDragging: !!monitor.isDragging(),
@@ -14,7 +15,7 @@ const DraggableDiv = ({emoji}) => {
         <div 
             ref={drag} 
             className="gridSquare" 
-            style={{border: isDragging ? "5px pink solid" : "blue 1px solid"}}
+            style={{opacity: isDragging ? "0.2" : "1"}}
         >
             {emoji}
         </div>

@@ -34,9 +34,15 @@ button {
 
 .imgHolder {
     margin-right: 30px;
-    opacity: 0.5;
+    border: black 1px solid;
 }
 
+.row1, .row2, .row3 {
+    width: 130px;
+    height: 130px;
+    opacity: 0.5;
+}
+    
 .row1 {
     background-image: url("./images/mable1.jpg");
     background-size: cover;
@@ -64,16 +70,18 @@ button {
 }
 
 .gridContainer {
-    width: 390px;
-    height: 390px;
+    width: 399px;
+    height: 399px;
 }
 
 .gridSquare {
     width: 130px;
     height: 130px;
-    outline: 1px solid;
+    /* outline: 1px solid; */
+    border: black 1px solid;
     float: left;
     font-size: 70px;
     text-align: center;
     line-height: 8rem;
+    background-color: #fff;
 }
