@@ -14,7 +14,7 @@ const DraggableDiv = ({emoji}) => {
         <div 
             ref={drag} 
             className="gridSquare" 
-            style={{border: isDragging ? "#00AC32 1px solid" : "black 1px solid"}}
+            style={{border: isDragging ? "#00ac32 1px solid" : "black 1px solid"}}
         >
             {emoji}
         </div>

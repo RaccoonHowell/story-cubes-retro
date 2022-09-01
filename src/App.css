@@ -1,17 +1,19 @@
 body {
     margin-top: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F1F1F1;
 }
 
 button {
     color: #fff;
-    background-color: #ff8b94;
+    background-color: #222;
     padding: 20px 30px;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     margin: 100px auto;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+    box-shadow: 3px 3px 0 0 #00ac32;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .page {
@@ -64,21 +66,20 @@ button {
 
 .textarea {
     resize: none;
-    width: 442px;
+    width: 448px;
     padding: 3px;
     margin-top: 20px;
 }
 
 .gridContainer {
-    width: 399px;
-    height: 399px;
+    width: 400px;
+    height: 400px;
 }
 
 .gridSquare {
     width: 130px;
     height: 130px;
-    /* outline: 1px solid; */
-    border: black 1px solid;
+    outline: black thin solid;
     float: left;
     font-size: 70px;
     text-align: center;
