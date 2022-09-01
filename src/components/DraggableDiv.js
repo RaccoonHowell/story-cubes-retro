@@ -1,10 +1,10 @@
 import React from "react"
 import { useDrag } from "react-dnd"
 
-const DraggableDiv = ({id, emoji}) => {
+const DraggableDiv = ({emoji}) => {
     const [{isDragging}, drag] = useDrag(() => ({
         type: "div",
-        item: {id: id, emoji: emoji},
+        item: {emoji: emoji},
         collect: (monitor) => ({
             isDragging: !!monitor.isDragging(),
         })
