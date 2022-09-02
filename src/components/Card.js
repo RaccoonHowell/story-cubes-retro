@@ -5,7 +5,7 @@ import Textarea from "react-expanding-textarea"
 const Card = ({header, row}) => {
     return (
         <>
-            <h1>{header}</h1>
+            <h2>{header}</h2>
             
             <DropTargetRow row={row} />
 

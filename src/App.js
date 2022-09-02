@@ -3,6 +3,7 @@ import React from "react"
 import {useState} from "react"
 import {DndProvider} from "react-dnd"
 import {HTML5Backend} from "react-dnd-html5-backend"
+import Header from "./components/Header"
 import Button from "./components/Button"
 import EmptyGrid from "./components/EmptyGrid"
 import Card from "./components/Card"
@@ -31,6 +32,7 @@ const App = () => {
 
     const handleClick = () => {
         selectEmojis()
+
         setClicked(true)
     }
 
@@ -38,7 +40,9 @@ const App = () => {
         <DndProvider backend={HTML5Backend}>
             <div className="page">
                 <section className="column1">
-                    <Button text="Generate Images" handleClick={handleClick} clicked={clicked}/>
+                    <Header />
+
+                    <Button text="Generate images" handleClick={handleClick} clicked={clicked}/>
 
                     <div className="gridContainer">
                         {clicked ? gridItems : <EmptyGrid />}
@@ -46,9 +50,9 @@ const App = () => {
                 </section>
 
                 <section className="column2">
-                    <Card header="Before Sprint" row="row1"/>
-                    <Card header="During Sprint" row="row2"/>
-                    <Card header="Future Sprints" row="row3"/>
+                    <Card header="Before sprint" row="row1"/>
+                    <Card header="During sprint" row="row2"/>
+                    <Card header="Future sprints" row="row3"/>
                 </section>
             </div>
         </DndProvider>

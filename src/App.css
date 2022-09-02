@@ -1,19 +1,27 @@
 body {
-    margin-top: 1rem;
-    font-family: 'Montserrat', sans-serif;
+    margin-top: 2rem;
     background-color: #F1F1F1;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #333;
 }
 
 button {
     color: #fff;
     background-color: #222;
-    padding: 20px 30px;
+    padding: 16px 19px 12px 20px;
     font-size: 1.25rem;
-    margin: 100px auto;
+    margin: 40px auto 70px;
     border: none;
     cursor: pointer;
     box-shadow: 3px 3px 0 0 #00ac32;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+button:hover {
+    background-color: black;
 }
 
 .page {
@@ -25,11 +33,13 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
 }
 
 .column2 {
     display: flex;
     flex-direction: column;
+    margin-left: 50px;
 }
 
 .imgHolder {
@@ -69,7 +79,6 @@ button {
     margin-top: 20px;
     outline: black thin solid;
     border: none;
-
 }
 
 .gridContainer {
@@ -80,10 +89,37 @@ button {
 .gridSquare {
     width: 130px;
     height: 130px;
+    line-height: 130px;
     outline: black thin solid;
     float: left;
     font-size: 70px;
     text-align: center;
-    line-height: 8rem;
     background-color: #fff;
 }
+
+.headerWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .logoHeader {
+    margin: 50px auto;
+} */
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    margin-left: 5px;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+/* .icon {
+    height: 40px;
+} */
