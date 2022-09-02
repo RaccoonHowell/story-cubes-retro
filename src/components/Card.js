@@ -1,5 +1,5 @@
 import React from "react"
-import ImageRow from "./ImageRow"
+import DropTargetRow from "./DropTargetRow"
 import Textarea from "react-expanding-textarea"
 
 const Card = ({header, row}) => {
@@ -7,7 +7,7 @@ const Card = ({header, row}) => {
         <>
             <h1>{header}</h1>
             
-            <ImageRow row={row} />
+            <DropTargetRow row={row} />
 
             <Textarea className="textarea" />
         </>

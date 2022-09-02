@@ -1,5 +1,5 @@
 import React from "react"
-import { useDrag } from "react-dnd"
+import {useDrag} from "react-dnd"
 
 const DraggableDiv = ({emoji}) => {
     const [{isDragging}, drag] = useDrag(() => ({
