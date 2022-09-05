@@ -18,7 +18,7 @@ const DropTarget = ({row}) => {
             <div 
                 ref={drop} 
                 className={`imgHolder ${className}`}
-                style={{boxShadow: isOver ? "0 0 20px #00ac32" : "none"}} 
+                style={{boxShadow: isOver ? "0 0 20px var(--mt-new-green)" : "none"}} 
             >
                 {dropTargetContent}    
             </div>
