@@ -1,3 +1,7 @@
+/* ===============
+    global styles 
+   =============== */
+
 :root {
     --mt-new-green: #00AC32;
     --light-grey: #F1F1F1;
@@ -13,23 +17,9 @@ body {
     color: var(--mt-font-color);
 }
 
-button {
-    color: white;
-    background-color: var(--dark-grey);
-    padding: 16px 19px 12px 20px;
-    font-size: 1.25rem;
-    margin: 40px auto 70px;
-    border: none;
-    cursor: pointer;
-    box-shadow: 3px 3px 0 0 var(--mt-new-green);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    line-height: 1.5;
-}
-
-button:hover {
-    background-color: black;
-}
+/* ===============
+    layout 
+   =============== */
 
 .page {
     display: grid;
@@ -49,44 +39,64 @@ button:hover {
     margin-left: 50px;
 }
 
-.imgHolder {
-    margin-right: 30px;
-    border: black 1px solid;
+/* ===============
+    typography 
+   =============== */
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
 }
 
-.row1, .row2, .row3 {
-    width: 130px;
-    height: 130px;
-    opacity: 0.5;
-}
-    
-.row1 {
-    background-image: url("./images/mable1.jpg");
-    background-size: cover;
+h1 {
+    margin-left: 5px;
+    font-size: 30px;
 }
 
-.row2 {
-    background-image: url("./images/mable2.jpg");
-    background-size: cover;
+h2 {
+    font-size: 22px;
 }
 
-.row3 {
-    background-image: url("./images/mable3.jpg");
-    background-size: cover;
-}
+/* ===============
+    components 
+   =============== */
 
-.row {
+/* header */
+
+.headerWrapper {
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.textarea {
-    resize: none;
-    width: 448px;
-    padding: 3px;
-    margin-top: 20px;
-    outline: black thin solid;
+/* .logoHeader {
+    margin: 50px auto;
+} */
+
+/* .icon {
+    height: 40px;
+} */
+
+/* button */
+
+button {
+    color: white;
+    background-color: var(--dark-grey);
+    padding: 16px 19px 12px 20px;
+    font-size: 1.25rem;
+    margin: 40px auto 70px;
     border: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 0 var(--mt-new-green);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    line-height: 1.5;
 }
+
+button:hover {
+    background-color: black;
+}
+
+/* grid */
 
 .gridContainer {
     width: 400px;
@@ -104,29 +114,41 @@ button:hover {
     background-color: white;
 }
 
-.headerWrapper {
+/* card */
+
+.imgHolder {
+    margin-right: 30px;
+    border: black 1px solid;
+}
+
+.row {
     display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-/* .logoHeader {
-    margin: 50px auto;
-} */
-
-h1, h2 {
-    font-family: 'Poppins', sans-serif;
+.row1, .row2, .row3 {
+    width: 130px;
+    height: 130px;
+    opacity: 0.5;
+    background-size: cover;
+}
+    
+.row1 {
+    background-image: url("./images/mable1.jpg");
 }
 
-h1 {
-    margin-left: 5px;
-    font-size: 30px;
+.row2 {
+    background-image: url("./images/mable2.jpg");
 }
 
-h2 {
-    font-size: 22px;
+.row3 {
+    background-image: url("./images/mable3.jpg");
 }
 
-/* .icon {
-    height: 40px;
-} */
+.textarea {
+    resize: none;
+    width: 448px;
+    padding: 3px;
+    margin-top: 20px;
+    outline: black thin solid;
+    border: none;
+}
