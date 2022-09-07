@@ -9,6 +9,7 @@ import EmptyGrid from "./components/EmptyGrid"
 import Card from "./components/Card"
 import emojis from "./emojis"
 import DraggableDiv from "./components/DraggableDiv"
+import Instructions from "./components/Instructions"
 
 const App = () => {
     const [clicked, setClicked] = useState(false)
@@ -39,21 +40,26 @@ const App = () => {
     return (
         <DndProvider backend={HTML5Backend}>
             <div className="page">
-                <section className="column1">
+                
+
+                <div className="flexContainer">
+                    <section className="column1">
                     <Header />
+                        <Instructions />
 
-                    <Button text="Generate images" handleClick={handleClick} clicked={clicked}/>
+                        <Button text="Generate images" handleClick={handleClick} clicked={clicked}/>
 
-                    <div className="gridContainer">
-                        {clicked ? gridItems : <EmptyGrid />}
-                    </div>
-                </section>
+                        <div className="gridContainer">
+                            {clicked ? gridItems : <EmptyGrid />}
+                        </div>
+                    </section>
 
-                <section className="column2">
-                    <Card header="Before sprint" row="row1"/>
-                    <Card header="During sprint" row="row2"/>
-                    <Card header="Future sprints" row="row3"/>
-                </section>
+                    <section className="column2">
+                        <Card header="Before sprint" row="row1"/>
+                        <Card header="During sprint" row="row2"/>
+                        <Card header="Future sprints" row="row3"/>
+                    </section>
+                </div>
             </div>
         </DndProvider>
     )
