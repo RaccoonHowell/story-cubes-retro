@@ -10,7 +10,7 @@
 }
 
 body {
-    margin-top: 0.4rem;
+    margin-top: 0.2rem;
     background-color: var(--light-grey);
     line-height: 1.5;
     text-decoration: none;
@@ -63,6 +63,7 @@ h2 {
 
 h3 {
     margin-top: 0;
+    font-size: 18px;
 }
 
 p {
@@ -77,16 +78,17 @@ p {
 
 .headerWrapper {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
+
+/* button */
 
 button {
     color: white;
     background-color: var(--dark-grey);
     padding: 16px 19px 12px 20px;
     font-size: 1.25rem;
-    margin: 18px auto 45px;
+    margin: 16px auto 42px;
     border: none;
     cursor: pointer;
     box-shadow: 3px 3px 0 0 var(--mt-new-green);
