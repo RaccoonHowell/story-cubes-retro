@@ -10,7 +10,7 @@
 }
 
 body {
-    margin-top: 0.2rem;
+    margin-top: 1.2rem;
     background-color: var(--light-grey);
     line-height: 1.5;
     text-decoration: none;
@@ -25,23 +25,20 @@ body {
 .flexContainer {
     display: grid;
     grid-template-columns: 55% 45%;
-    margin-left: 70px;   
+    margin-left: 4rem;   
 }
 
 .column1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-top: 20px; */
-    /* text-align: center; */
-    /* margin-left: 40px; */
 }
 
 .column2 {
     display: flex;
     flex-direction: column;
-    margin-left: 80px;
-    margin-top: 1.7rem;
+    margin-left: 5rem;
+    margin-top: 1rem;
 }
 
 /* ===============
@@ -53,21 +50,21 @@ h1, h2 {
 }
 
 h1 {
-    margin-left: 5px;
-    font-size: 28px;
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 1.4rem;
 }
 
 h3 {
     margin-top: 0;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 p {
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 /* ===============
@@ -81,17 +78,22 @@ p {
     align-items: center;
 }
 
+h1, .icon {
+    margin-bottom: 0.2rem;
+    margin-top: 0;
+}
+
 /* button */
 
 button {
     color: white;
     background-color: var(--dark-grey);
-    padding: 16px 19px 12px 20px;
+    padding: 1rem 1.2rem 0.8rem 1.3rem;
     font-size: 1.25rem;
-    margin: 16px auto 42px;
+    margin: 0.5rem auto 2.2rem;
     border: none;
     cursor: pointer;
-    box-shadow: 3px 3px 0 0 var(--mt-new-green);
+    box-shadow: 0.2rem 0.2rem 0 0 var(--mt-new-green);
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     line-height: 1.5;
@@ -114,7 +116,7 @@ button:hover {
     line-height: 130px;
     outline: black thin solid;
     float: left;
-    font-size: 70px;
+    font-size: 4.4rem;
     text-align: center;
     background-color: white;
 }
@@ -122,17 +124,19 @@ button:hover {
 /* card */
 
 .imgHolder {
-    margin-right: 30px;
+    margin-right: 1.9rem;
     border: black 1px solid;
 }
 
 .row {
     display: flex;
+    width: 485px;
 }
 
 .row1, .row2, .row3 {
     width: 130px;
     height: 130px;
+    line-height: 130px;
     opacity: 0.5;
     background-size: cover;
 }
@@ -152,8 +156,8 @@ button:hover {
 .textarea {
     resize: none;
     width: 448px;
-    padding: 3px;
-    margin-top: 20px;
+    padding: 0.2rem;
+    margin-top: 1.3rem;
     outline: black thin solid;
     border: none;
 }
